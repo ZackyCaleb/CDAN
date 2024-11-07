@@ -15,6 +15,6 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
 
 
 * Acknowledgment
-Appreciate the works of those who came before.
+ Appreciate the works of those who came before: 
   * [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841)
   * [SARGAN: Spatial Attention-Based Residuals for Facial Expression Manipulation](https://ieeexplore.ieee.org/abstract/document/10065495)
