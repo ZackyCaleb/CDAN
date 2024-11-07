@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from modules import AttnBlock, ResnetBlock, Normalize, nonlinearity, Upsample
+from .modules import AttnBlock, ResnetBlock, Normalize, nonlinearity, Upsample
 
 class decoder1(nn.Module):
     def __init__(self, z_channels=256, block_in=512):

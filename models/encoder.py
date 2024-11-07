@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from modules import ResnetBlock, AttnBlock, nonlinearity, Normalize
+from .modules import ResnetBlock, AttnBlock, nonlinearity, Normalize
 
 class Downsample(nn.Module):
     def __init__(self, in_channels, with_conv):

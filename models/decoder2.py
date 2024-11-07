@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from modules import SpatialAttention, ResnetBlock, Normalize, nonlinearity, Upsample
+from .modules import SpatialAttention, ResnetBlock, Normalize, nonlinearity, Upsample
 
 
 class decoder2(nn.Module):
