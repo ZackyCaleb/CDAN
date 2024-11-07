@@ -1,0 +1,10 @@
+numpy~=1.23.0
+opencv-python~=4.1.2.30
+matplotlib~=3.7.5
+scipy~=1.9.1
+scikit-image~=0.20.0
+torch~=2.1.1+cu118
+torchvision~=0.16.1+cu118
+tqdm~=4.66.1
+albumentations~=0.4.3
+pillow~=9.0.1
