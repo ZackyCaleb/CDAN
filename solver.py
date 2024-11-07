@@ -1,5 +1,5 @@
 import torch
-import tqdm
+from tqdm import tqdm
 import numpy as np
 from cdan import CDAN
 import os
@@ -68,6 +68,11 @@ class Solver(object):
             acc, nums, dis = 0, 0, 0
             lower_gen_loss, lower_dis_loss = 10.0, 10.0
             all_gen_loss, all_dis_loss = 0, 0
+            # try:
+            #     images, au = next(train_dataset)
+            # except:
+            #     data_iter = iter(train_dataset)
+            #     images, au = next(data_iter)
             with tqdm(range(len(train_dataset))) as pbar:
                 for i, (images, au) in enumerate(tqdm(train_dataset)):
                     imgs = images.to(device=args.device)

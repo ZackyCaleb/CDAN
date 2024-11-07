@@ -69,7 +69,7 @@ class ImagePaths(Dataset):
 
 
 def get_train_loader(args):
-    train_data = ImagePaths(args.images_dir, args.image_size)
+    train_data = ImagePaths(args.images_dir, args.pkl_dir, args.image_size)
     # train_loader = DataLoader(train_data, batch_size=args.batch_size,
     #                           args.num_workers=2, pin_memory=True, shuffle=True)
     train_loader = DataLoader(train_data, batch_size=args.batch_size, shuffle=True)
