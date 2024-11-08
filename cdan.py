@@ -157,11 +157,11 @@ class CDAN(nn.Module):
         # _, mask_input_au = self.discriminator(mask_input)
         mask_input_au = self.AU_dis(mask_input)
         # _, color_map_au = self.discriminator(color_map)
-        color_map_au = self.AU_dis(color_map)
+        # color_map_au = self.AU_dis(color_map)
 
-        au_loss = self.ou_loss(mask_input_au, au) + self.ou_loss(color_map_au, torch.zeros_like(au))
+        # au_loss = self.ou_loss(mask_input_au, au) + self.ou_loss(color_map_au, torch.zeros_like(au))
         # au_loss = self.ou_loss(mask_input_au, au) + torch.relu(color_map_au).sum()
-        # au_loss = self.ou_loss(mask_input_au, au)
+        au_loss = self.ou_loss(mask_input_au, au)
 
         tv_loss = 2e-5 * self.tv_loss(mask_input) + 1e-1*torch.mean(mask_input)
         # return 3e-1*nll_loss, 3e-1*g_loss, 60*au_loss, tv_loss
