@@ -6,13 +6,13 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
   * Please set your environment following the requirements.
 
 
-* First Step
+* Second Step
   * Please download related datasets from [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
-  * Meanwhile, please use [Openface toolkit](https://github.com/TadasBaltrusaitis/OpenFace) to get the segment faces and facial action units of these images.
+  * Meanwhile, please use [Openface toolkit](https://github.com/TadasBaltrusaitis/OpenFace) to get the segment faces and facial action units of these images. Please construct a '.pkl' file with facial action units and place it in a folder, which will be used to train the CDAN.
   * Finally, allocate the training and testing datasets and place them under folder datasets.
 
 
-* Second Step
+* Third Step
   * Run main.py by setting related parameters.
 
 
