@@ -1,5 +1,5 @@
-# CDAN
-The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."![image](https://github.com/user-attachments/assets/ff7f017a-1796-494a-88eb-46ed96c7befb)
+# CDAN ![image](https://github.com/user-attachments/assets/ff7f017a-1796-494a-88eb-46ed96c7befb)
+The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."
 
 
 
