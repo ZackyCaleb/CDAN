@@ -3,7 +3,7 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
 
 
 * First Step
-  * Please set your environment following the requirements.
+  * Please set your environments following the requirements.
 
 
 * Second Step
