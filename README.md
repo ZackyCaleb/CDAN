@@ -14,6 +14,7 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
 
 * Third Step
   * A demo can be executed directly by  ```python main.py```.
+  * If you utilize your datasets, you can adjust the parameters of ```opt.py``` and subsequently run ```main.py```.
 
 
 * Acknowledgment \
