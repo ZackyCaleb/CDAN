@@ -13,7 +13,7 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
 
 
 * Third Step
-  * Run main.py by setting related parameters.
+  * Run ```main.py``` by setting related parameters.
 
 
 * Acknowledgment \
