@@ -25,7 +25,7 @@ class Solver(object):
         # self.opt_vq, self.opt_nl, self.opt_au = self.configure_optimizers(opt)
         # self.opt_vq, self.opt_dis = self.configure_optimizers(opt)
         self.opt_vq, self.opt_dis_fea, self.opt_dis_au = self.configure_optimizers(config)
-        self.train(config)
+        # self.train(config)
 
     def configure_optimizers(self, args):
         lr = args.learning_rate
@@ -159,20 +159,27 @@ class Solver(object):
             with torch.no_grad():
                 mask_map = mask_map.repeat(1, 3, 1, 1)
                 real_fake_images = torch.cat((imgs[:4], color_map[:4], mask_map[:4], mask_input[:4], mask_color[:4], xrec[:4]))
-                vutils.save_image(real_fake_images, os.path.join("results", f"all_{epoch}.jpg"), nrow=4)
+                # vutils.save_image(real_fake_images, os.path.join("results", f"all_{epoch}.jpg"), nrow=4)
+                vutils.save_image(real_fake_images, os.path.join(args.save_rec, f"all_{epoch}.jpg"), nrow=4)
                 # vutils.save_image(mask_map[:4], os.path.join("results", f"mask_{epoch}.jpg"), nrow=4)
 
-            if epoch > 300 and lower_dis_loss > all_dis_loss and lower_gen_loss > all_gen_loss:
-            # if epoch==args.epochs-1:
-                for i in glob.glob(os.path.join(args.save_check, '*.pth')):
-                # for i in glob.glob(os.path.join(args.save_check, '*.pth')):
-                # for i in glob.glob(os.path.join(args.save_check, '*.pth')):
-                    os.remove(i)
-                torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_affect_HaSa_NoAuSp_{epoch}.pth"))
-                # torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_2_{epoch}.pth"))
-                # torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_affect_{epoch}.pth"))
-                lower_dis_loss = all_dis_loss
-                lower_gen_loss = all_gen_loss
+            '''
+            save model checkpoints 
+            '''
+            # if epoch > 30 and lower_dis_loss > all_dis_loss and lower_gen_loss > all_gen_loss:
+            # # if epoch==args.epochs-1:
+            #     for i in glob.glob(os.path.join(args.save_check, '*.pth')):
+            #     # for i in glob.glob(os.path.join(args.save_check, '*.pth')):
+            #     # for i in glob.glob(os.path.join(args.save_check, '*.pth')):
+            #         os.remove(i)
+            #     # torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_affect_HaSa_NoAuSp_{epoch}.pth"))
+            #     # torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_2_{epoch}.pth"))
+            #     torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_affect_{epoch}.pth"))
+            #     lower_dis_loss = all_dis_loss
+            #     lower_gen_loss = all_gen_loss
+            if epoch == args.epochs-1:
+                torch.save(self.cdan.state_dict(), os.path.join(args.save_check, f"cdan_affect_{epoch}.pth"))
+
 
     def rec(self, args):
         model_path = args.save_check

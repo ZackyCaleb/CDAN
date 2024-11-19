@@ -143,7 +143,7 @@ class CDAN(nn.Module):
 
         # return 1e-1*NL_loss+30*AU_loss
         # return 1e-1*NL_loss
-        return 1e-1*NL_loss, 0*AU_loss
+        return 1e-1*NL_loss, 1*AU_loss
 
     def gen_loss(self, inputs, xrec, mask_input, color_map, mask_map, au):
         rec_loss = self.l1_loss(xrec, inputs)
