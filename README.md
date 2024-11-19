@@ -16,7 +16,7 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
   * An intuitive demo can be executed directly by  ```python main.py```.
   * If you utilize your datasets, you can adjust the parameters of ```opt.py``` and subsequently run ```main.py```.
 
-
+DOI: 10.5281/zenodo.14184162
 * Acknowledgment \
  Appreciate the works of those who came before: \
  [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841) \
