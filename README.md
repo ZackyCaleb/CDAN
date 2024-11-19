@@ -1,5 +1,6 @@
 # CDAN
-The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."
+The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."![image](https://github.com/user-attachments/assets/ff7f017a-1796-494a-88eb-46ed96c7befb)
+
 
 
 * First Step
@@ -16,7 +17,6 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
   * An intuitive demo can be executed directly by  ```python main.py```.
   * If you utilize your datasets, you can adjust the parameters of ```opt.py``` and subsequently run ```main.py```.
 
-DOI: 10.5281/zenodo.14184162
 * Acknowledgment \
  Appreciate the works of those who came before: \
  [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841) \
