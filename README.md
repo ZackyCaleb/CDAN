@@ -21,7 +21,7 @@ Python datasets_pre_col.py
 
 # Run
 ## Training
-* To Train this model and get checkpoints:
+* To train this model and get checkpoints:
  ```
 Python main.py
  ```
