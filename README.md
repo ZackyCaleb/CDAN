@@ -20,7 +20,7 @@ To generate the affect_HaSa_au.pk, training datasets and testing datasets extrac
    ```
   Python main.py
    ```
-A checkpoint trained on AffectNet can be downloaded in CDAN.
+* A checkpoint trained on AffectNet can be downloaded in CDAN.
 
 ## Testing 
 * To get reconstruct images:
