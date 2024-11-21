@@ -43,6 +43,6 @@ To quantitative evaluate reconstruct images:
       ```
  
 # Acknowledgment
- Appreciate the works of those who came before: \
+ Appreciate the works and code repository of those who came before: \
  [1] [Esser P, Rombach R, Ommer B. Taming transformers for high-resolution image synthesis[C]//Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2021: 12873-12883.](https://arxiv.org/abs/2012.09841) \
  [2] [Akram A, Khan N. SARGAN: Spatial attention-based residuals for facial expression manipulation[J]. IEEE Transactions on Circuits and Systems for Video Technology, 2023, 33(10): 5433-5443.](https://ieeexplore.ieee.org/abstract/document/10065495)
