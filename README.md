@@ -14,7 +14,7 @@ In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial
    * Allocating training and testing datasets.
 An example of this directory is shown in ```datasets/```.
 
-To generate the affect_HaSa_au.pk, training datasets, and testing datasets extract each image AUs with OpenFace. run:
+To generate the affect_HaSa_au.pkl, training datasets, and testing datasets extract each image AUs with OpenFace. run:
 ```
 Python datasets_pre_col.py
 ```
