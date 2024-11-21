@@ -8,8 +8,8 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
  * Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
 
 # Data Preparation
-   * Downloading original images after requiring official authorization of the mentioned data release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
-   * Following the official operation procedure of OpenFace to get segment face and facial Action Units (AUs).
+   * Downloading the original images, after obtaining official authorization for the mentioned datasets release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
+   * Follow the official operation procedure of OpenFace to obtain segmented face regions and facial Action Units (AUs).
    * Allocating training and testing datasets.
 An example of this directory is shown in ```dataets/```.
 To generate the affect_HaSa_au.pk, training datasets and testing datasets extract each image AU with OpenFace. A demo can be run: ```Python datasets_pre_col.py```.
@@ -20,7 +20,7 @@ To generate the affect_HaSa_au.pk, training datasets and testing datasets extrac
    ```
   Python main.py
    ```
-* A checkpoint trained on AffectNet can be downloaded in CDAN.
+* A checkpoint trained on AffectNet can be downloaded in [CDAN.pth](https://drive.google.com/file/d/1KuYYEIvtXQphuHlu9hpcbTe86kTXRbaE/view).
 
 ## Testing 
 * To get reconstruct images:
