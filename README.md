@@ -15,37 +15,37 @@ In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial
 An example of this directory is shown in ```datasets/```.
 
 To generate the affect_HaSa_au.pk, training datasets, and testing datasets extract each image AUs with OpenFace. run:
-  ```
-  Python datasets_pre_col.py
-  ```
+```
+Python datasets_pre_col.py
+```
 
 # Run
 ## Training
 * To Train this model and get checkpoints:
-   ```
-  Python main.py
-   ```
+ ```
+Python main.py
+ ```
 * A checkpoint trained on AffectNet can be downloaded in [CDAN.pth](https://drive.google.com/file/d/1CrcJG9Ipzf_jyvkyIk1ubK1GHuAvftFA/view).
 
 ## Testing 
 * To get reconstruct images:
-   ```
-  Python main.py  --mode rec --images_dir /datasets/imgs/testing
-   ```
+ ```
+Python main.py  --mode rec --images_dir /datasets/imgs/testing
+ ```
 
 To quantitative evaluate reconstruct images:
    * evaluating IS score:
-     ```
-     fidelity --gpu 0 --isc --input1  path/to/reconstruct/imgs
-     ```
+   ```
+   fidelity --gpu 0 --isc --input1  path/to/reconstruct/imgs
+   ```
    * evaluating FID score:
-      ```
-     Python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
-      ```
+    ```
+   Python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
+    ```
    * evaluating ACD and ED scores:
-      ```
-     Python ACD_ED.py
-      ```
+    ```
+   Python ACD_ED.py
+    ```
  
 # Acknowledgment
  Appreciate the works and code repositories of those who came before: \
