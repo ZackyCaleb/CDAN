@@ -3,14 +3,14 @@
 The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."
 In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial Network (CDAN), which is designed to parse facial expression features based on the Spatial Extend Attention (SEA) module and facial Action Units (AUs).
 # Requirements and dependencies
- * Install PyTorch (version 1.10.0), and torchvision (version 0.11.0). Torch and torchvision are from http://pytorch.org.
- * Install requirements.txt (pip install -r requirements.txt)
- * Install OpenFace (version 2.2.0) from https://github.com/TadasBaltrusaitis/OpenFace.
- * Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
+ * Installing PyTorch (version 1.10.0), and torchvision (version 0.11.0). Torch and torchvision are from http://pytorch.org.
+ * Installing requirements.txt (pip install -r requirements.txt)
+ * Installing OpenFace (version 2.2.0) from https://github.com/TadasBaltrusaitis/OpenFace.
+ * Installing [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
 
 # Data Preparation
    * Downloading the original images after obtaining official authorization for the mentioned datasets release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
-   * Follow the official operation procedure of OpenFace to obtain segmented face regions and facial AUs.
+   * Folloingw the official operation procedure of OpenFace to obtain segmented face regions and facial AUs.
    * Allocating training and testing datasets.
 An example of this directory is shown in ```dataets/```.
 To generate the affect_HaSa_au.pk, training datasets and testing datasets extract each image AU with OpenFace. A demo can be run: ```Python datasets_pre_col.py```.
