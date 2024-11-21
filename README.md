@@ -5,7 +5,7 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
  * Install PyTorch (version 1.10.0), and torchvision (version 0.11.0). Torch and torchvision are from http://pytorch.org.
  * Install requirements.txt (pip install -r requirements.txt)
  * Install OpenFace (version 2.2.0) from https://github.com/TadasBaltrusaitis/OpenFace.
- * Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ``pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
+ * Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
 
 # Data Preparation
    * Downloading original images after requiring official authorization of the mentioned data release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
