@@ -1,4 +1,5 @@
-# CDAN ![image](https://github.com/user-attachments/assets/ff7f017a-1796-494a-88eb-46ed96c7befb)
+# CDAN ![image](https://github.com/user-attachments/assets/641e283e-180e-47e9-b04e-d8070df94a77)
+
 The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."
 In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial Network (CDAN), which is designed to parse facial expression features based on the Spatial Extend Attention (SEA) module and facial Action Units (AUs).
 # Requirements and dependencies
