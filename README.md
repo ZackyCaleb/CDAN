@@ -15,15 +15,15 @@ An example of this directory is shown in ```dataets/```.
 To generate the affect_HaSa_au.pk, training datasets and testing datasets extract each image AU with OpenFace. A demo can be run: ```Python datasets_pre_col.py```.
 
 # Run
-* Training
-To Train and get checkpoints:
+## Training
+* To Train and get checkpoints:
    ```
   Python main.py
    ```
 A checkpoint trained on AffectNet can be downloaded in CDAN.
 
-* Testing 
-To get reconstruct images:
+## Testing 
+* To get reconstruct images:
    ```
   Python main.py  --mode rec --images_dir /datasets/imgs/testing
    ```
