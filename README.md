@@ -35,17 +35,17 @@ Python main.py  --mode rec --images_dir /datasets/imgs/testing
 
 To quantitative evaluate reconstruct images:
    * evaluating IS score:
-   ```
-   fidelity --gpu 0 --isc --input1  path/to/reconstruct/imgs
-   ```
+ ```
+ fidelity --gpu 0 --isc --input1  path/to/reconstruct/imgs
+ ```
    * evaluating FID score:
-    ```
-   Python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
-    ```
+  ```
+ Python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
+  ```
    * evaluating ACD and ED scores:
-    ```
-   Python ACD_ED.py
-    ```
+  ```
+ Python ACD_ED.py
+  ```
  
 # Acknowledgment
  Appreciate the works and code repositories of those who came before: \
