@@ -1,22 +1,33 @@
 # CDAN ![image](https://github.com/user-attachments/assets/ff7f017a-1796-494a-88eb-46ed96c7befb)
 The official code repository for the paper "Self-Supervised Facial Expression Parsing: Unveiling Global Patterns through Facial Action Units."
 
+# Requirements and dependencies
+ * Install PyTorch (version 1.10.0), and torchvision (version 0.11.0). Torch and torchvision are from http://pytorch.org.
+ * Install requirements.txt (pip install -r requirements.txt)
+ * Install OpenFace (version 2.2.0) from https://github.com/TadasBaltrusaitis/OpenFace.
+ * Install [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ``pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
 
+# Data Preparation
+   * Downloading original images after requiring official authorization of the mentioned data release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
+   * Following the official operation procedure of OpenFace to get segment face and facial Action Units (AUs).
+   * Allocating training and testing datasets.
+An example of this directory is shown in ```dataets/```.
+To generate the affect_HaSa_au.pk, training datasets and testing datasets extract each image AU with OpenFace. A demo can be run: ```Python datasets_pre_col.py```.
 
-* First Step
-  * Please set your environments following the requirements.
+# Run
+## Training
+To Train and get checkpoints:
+   ```Python main.py```
+A checkpoint trained on AffectNet can be downloaded in CDAN.
+## Testing 
+To get reconstruct images:
+   ```Python main.py  --mode rec --images_dir /datasets/imgs/testing```
 
-
-* Second Step
-  * Please download related datasets from [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
-  * Meanwhile, please use [Openface toolkit](https://github.com/TadasBaltrusaitis/OpenFace) to get the segment faces and facial action units of these images. Please construct a ```.pkl``` file with facial action units and place it in a folder, which will be used to train the CDAN.
-  * Finally, allocate the training and testing datasets and place them under folder datasets.
-
-
-* Third Step
-  * An intuitive demo can be executed directly by  ```python main.py```.
-  * If you utilize your datasets, you can set the parameters of ```opt.py``` and subsequently run ```main.py```.
-
+To quantitative evaluate reconstruct images:
+   * evaluating IS score: ```fidelity --gpu 0 --isc --input1  ./sace_rec```
+   * evaluating FID score: ```python -m pytorch_fid /datasets/imgs/testing  ./sace_rec```
+   * evaluating ACD and ED score: ```python ACD_ED.py```
+ 
 * Acknowledgment \
  Appreciate the works of those who came before: \
  [Taming Transformers for High-Resolution Image Synthesis](https://arxiv.org/abs/2012.09841) \
