@@ -4,9 +4,9 @@ The official code repository for the paper "Self-Supervised Facial Expression Pa
 In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial Network (CDAN), which is designed to parse facial expression features based on the Spatial Extend Attention (SEA) module and facial Action Units (AUs).
 # Requirements and dependencies
  * Installing PyTorch (version 1.10.0), and torchvision (version 0.11.0). Torch and torchvision are from http://pytorch.org.
- * Installing requirements.txt (pip install -r requirements.txt)
+ * Installing requirements.txt (```pip install -r requirements.txt```)
  * Installing OpenFace (version 2.2.0) from https://github.com/TadasBaltrusaitis/OpenFace.
- * Installing [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
+ * Installing [pytorch-fid](https://github.com/mseitzer/pytorch-fid) (```pip install torch-fidelity```） and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) （``` pip install pytorch-fid```）
 
 # Data Preparation
    * Downloading the original images after obtaining official authorization for the mentioned datasets: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
