@@ -39,11 +39,11 @@ To quantitative evaluate reconstruct images:
      ```
    * evaluating FID score:
       ```
-     python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
+     Python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
       ```
    * evaluating ACD and ED scores:
       ```
-     python ACD_ED.py
+     Python ACD_ED.py
       ```
  
 # Acknowledgment
