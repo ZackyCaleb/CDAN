@@ -9,7 +9,7 @@ In this work, we introduce a novel self-supervised Codec Dual-Output Adversarial
  * Installing [pytorch-fid](https://github.com/mseitzer/pytorch-fid) ```pip install torch-fidelity``` and [pytorch-fidelity](https://github.com/toshas/torch-fidelity) ``` pip install pytorch-fid```
 
 # Data Preparation
-   * Downloading the original images after obtaining official authorization for the mentioned datasets release: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
+   * Downloading the original images after obtaining official authorization for the mentioned datasets: [Affectnet](http://mohammadmahoor.com/affectnet/), [Oulu-CASIA](https://www.oulu.fi/en), and [KDEF](http://www.emotionlab.se/kdef/).
    * Folloingw the official operation procedure of OpenFace to obtain segmented face regions and facial AUs.
    * Allocating training and testing datasets.
 An example of this directory is shown in ```dataets/```.
