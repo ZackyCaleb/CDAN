@@ -183,7 +183,7 @@ class Solver(object):
 
     def rec(self, args):
         model_path = args.save_check
-        self.cdan.load_state_dict(torch.load(model_path+f"cdan_affect_HaSa_50.pth"))
+        self.cdan.load_state_dict(torch.load(model_path+f"CDAN.pth"))
         self.cdan.to(args.device)
         img_names = self.data_loader[1]
         data_loader = self.data_loader[0]
