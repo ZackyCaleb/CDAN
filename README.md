@@ -29,9 +29,18 @@ To get reconstruct images:
    ```
 
 To quantitative evaluate reconstruct images:
-   * evaluating IS score: ```fidelity --gpu 0 --isc --input1  ./sace_rec```
-   * evaluating FID score: ```python -m pytorch_fid /datasets/imgs/testing  ./sace_rec```
-   * evaluating ACD and ED score: ```python ACD_ED.py```
+   * evaluating IS score:
+     ```
+     fidelity --gpu 0 --isc --input1  ./sace_rec
+     ```
+   * evaluating FID score:
+      ```
+     python -m pytorch_fid /datasets/imgs/testing  ./sace_rec
+      ```
+   * evaluating ACD and ED score:
+      ```
+     python ACD_ED.py
+      ```
  
 * Acknowledgment \
  Appreciate the works of those who came before: \
