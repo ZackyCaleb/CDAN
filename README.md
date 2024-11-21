@@ -20,7 +20,7 @@ To generate the affect_HaSa_au.pk, training datasets, and testing datasets extra
 
 # Run
 ## Training
-* To Train and get checkpoints:
+* To Train this model and get checkpoints:
    ```
   Python main.py
    ```
