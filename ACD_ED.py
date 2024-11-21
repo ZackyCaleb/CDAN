@@ -41,17 +41,17 @@ def Expression_Distance(real_csv, fake_csv):
 
 
 '''
-计算ACD
+calculating ACD
 '''
 if __name__ == '__main__':
     real_names = os.listdir(r'.\St_gan_affect_HaSa\xrec/')
     real_tmp = r'.\affect_HaSa_test_segface\imgs'
-    # fake_tmp = r'F:\GAN_FER\dataset\affect_seg_face_xrec'
-    # fake_tmp = r'F:\GAN_FER\dataset\Ablation_Study\St_gan_affect_HaSa\xrec'
-    # fake_tmp = r'F:\project\GANimation-master\affect_HaSa_xrec'
-    # fake_tmp = r'F:\project\US-GAN-main\affect_HaSa_xrec'
+    # fake_tmp = r'.\affect_seg_face_xrec'
+    # fake_tmp = r'.\St_gan_affect_HaSa\xrec'
+    # fake_tmp = r'.\affect_HaSa_xrec'
+    # fake_tmp = r'.\affect_HaSa_xrec'
     fake_tmp = r'.\affect_HaSa_xrec'
-    # fake_tmp = r'F:\project\MFS-main\affect_HaSa_xrec'
+    # fake_tmp = r'.\affect_HaSa_xrec'
     all_dis = []
     for name in real_names:
         real_path = os.path.join(real_tmp, name)
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     print(ave_dis)
 
 '''
-计算ED
+calculating ED
 '''
 # import pickle
 # # test_au = open(r'.\affect_HaSa_test_au.pkl', 'rb')
