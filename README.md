@@ -31,11 +31,11 @@ To generate the affect_HaSa_au.pk, training datasets and testing datasets extrac
 To quantitative evaluate reconstruct images:
    * evaluating IS score:
      ```
-     fidelity --gpu 0 --isc --input1  path/to/construct/imgs
+     fidelity --gpu 0 --isc --input1  path/to/reconstruct/imgs
      ```
    * evaluating FID score:
       ```
-     python -m pytorch_fid /datasets/imgs/testing  path/to/construct/imgs
+     python -m pytorch_fid /datasets/imgs/testing  path/to/reconstruct/imgs
       ```
    * evaluating ACD and ED scores:
       ```
